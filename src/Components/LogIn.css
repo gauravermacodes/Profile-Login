@@ -1,0 +1,48 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 500px;
+    background-color: #334756;
+    padding: 0 30px;
+}
+
+.login h2{
+    color: white;
+    font-size: 35px;
+}
+
+.login input{
+    color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background: none;
+    height:30px ;
+    width: 300px;
+    border-bottom: 2px solid white;
+    font-size: large;
+}
+
+.login input::placeholder{
+    color: white;
+    font-size: large;
+}
+
+.login button{
+    background-color: white;
+    color: black;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: large;
+    outline: none;
+}
+
+.login h4{
+    font-size: large;
+    color: white;
+}
