@@ -11,6 +11,7 @@
 .login h2{
     color: white;
     font-size: 35px;
+    font-family: 'Pricedown', arial;
 }
 
 .login input{
@@ -44,5 +45,5 @@
 
 .login h4{
     font-size: large;
-    color: white;
+    color: rgb(241, 104, 104);
 }

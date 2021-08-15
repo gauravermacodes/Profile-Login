@@ -1,13 +1,15 @@
 import React,{useState} from "react";
 import "./App.css";
 import LogIn from "./Components/LogIn";
-import Card from "./UI/Card";
+import Profile from "./Components/Profile";
 
 function App() {
-  const [showprofile, setshowprofile] = useState('false')
+  const [showprofile, setshowprofile] = useState(true);
+
   return (
     <div className="App">
-        <LogIn setshowprofile={setshowprofile} />
+        {!showprofile && <LogIn setshowprofile={setshowprofile} />}
+        {showprofile && <Profile setshowprofile={setshowprofile}/>}
     </div>
   );
 }

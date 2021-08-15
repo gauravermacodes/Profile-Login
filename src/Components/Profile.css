@@ -1,0 +1,138 @@
+.profile{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #334756;
+}
+
+.header h2{
+    color: white;
+    margin-left: 20px;
+}
+
+.header button{
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin: 10px 15px;
+    font-weight: 800;
+}
+
+.main_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    background-color: #334756;
+}
+
+.profilepic_container{
+    position: relative;
+    top: -70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+    padding: 10px;
+    height: 200px;
+}
+.profilepic_container .pic{
+    width: 140px;
+    height: 140px;
+    margin-bottom: 10px;
+}
+
+.change_picture {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.change_picture input{
+    position: absolute;
+    top: 0;
+    right: 0; /* not left, because only the right part of the input seems to
+                 be clickable in some browser I can't remember */
+    cursor: pointer;
+    opacity: 0.0;
+    filter: alpha(opacity=0); /* and all the other old opacity stuff you
+                                 want to support */
+    font-size: 300px; /* wtf, but apparently the most reliable way to make
+                         a large part of the input clickable in most browsers */
+    height: 200px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 400px;
+    position: relative;
+    top: -50px;
+    padding: 10px;
+    width: 35%;
+}
+
+.form input{
+    color: white;
+    font-size: 18px;
+    width: 90%;
+    margin: 15px 20px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+}
+
+#date{
+    color: white;
+}
+
+.form input::placeholder{
+    color: white;
+}
+
+.form button{
+    width: 100px;
+    height: 35px;
+    /* margin: 20px 140px; */
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.detail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px;
+    height: 200px;
+}
+
+.detail p{
+    font-size: large;
+    color: white;
+}
+
